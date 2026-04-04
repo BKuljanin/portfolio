@@ -4,6 +4,8 @@ Control systems engineer with a focus on embedded systems. My background is in c
 
 I'm interested in the intersection of control theory and embedded software, from sensor interfacing and signal processing on microcontrollers to the modelling and simulation work that supports it.
 
+This repository contains STM32 firmware projects covering UART, I2C, SPI, and CAN communication, timer-based PWM generation, sensor drivers, and sensor fusion.
+
 ---
 
 ## Quick Links

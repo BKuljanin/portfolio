@@ -40,6 +40,9 @@ Real time IMU sensor fusion combining SPI1+DMA IMU reading, complementary filter
 **[STM32-I2C-IMU-Driver](https://github.com/BKuljanin/STM32-I2C-IMU-Driver)**
 Bare metal I2C implementation using polling. Reads accelerometer, gyroscope, and temperature from MPU6500.
 
+**[STM32-I2C-IRQ-BARO-MAG-Driver](https://github.com/BKuljanin/STM32-I2C-IRQ-BARO-MAG-Driver)**
+Bare metal I2C implementation using polling. Reads magnetometer and barometer data on I2C1.
+
 **[STM32-I2C-IRQ-IMU](https://github.com/BKuljanin/STM32-I2C-IRQ-IMU)**
 I2C driver for MPU6500 using interrupt based transfers.
 

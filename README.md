@@ -19,7 +19,7 @@ This repository contains STM32 firmware projects covering RTOS, UART, I2C, SPI, 
 | [CAN Bus](#can-bus) | Two board CAN communication |
 | [Sensor Drivers](#sensor-drivers) | Ultrasonic, Load Cell, Current Sensor |
 | [PWM & ADC](#pwm--adc) | Edge/Center aligned PWM, ADC with DMA |
-| [Build System](#build-system) | Custom Makefile + Linker Script + Startup |
+| [Build System and Bootloader](#build-system-and-bootloader) | Custom Makefile + Linker Script + Startup |
 
 ---
 
@@ -102,7 +102,10 @@ Bare metal edge aligned PWM generation with configurable output.
 
 ---
 
-## Build System
+## Build System and Boot Loader
 
 **[STM32-MAKE-BUILD-SYSTEM](https://github.com/BKuljanin/STM32-MAKE-BUILD-SYSTEM)**
 Bare metal STM32 firmware built with a custom GNU Make build system. Includes startup code, linker script, and OpenOCD flashing. No IDE required.
+
+**[STM32-UART-BOOTLOADER](https://github.com/BKuljanin/STM32-BOOTLOADER)**
+Custom UART bootloader for STM32F446RE. Bootloader sits in sector 0(16KB), receives new application firmware over UART, and writes it to flash. Includes register level flash driver, custom linker scripts, and a Python flash tool for firmware updates without a debugger.

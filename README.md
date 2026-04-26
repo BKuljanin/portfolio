@@ -12,6 +12,7 @@ This repository contains STM32 firmware projects covering UART, I2C, SPI, and CA
 
 | Category | Projects |
 |:---------|:---------|
+| [UAV RTOS Sensor Acquisition](#rtos-uav-sensor-acquisition) | IMU, Baro, Mag, SD Logging, Sensor Fusion |
 | [SPI Drivers](#spi-drivers) | IMU (DMA, HAL, Sensor Fusion + SD) |
 | [I2C Drivers](#i2c-drivers) | IMU (Polling, Interrupt, HAL) |
 | [UART Drivers](#uart-drivers) | GPS (Polling, DMA) |
@@ -19,6 +20,16 @@ This repository contains STM32 firmware projects covering UART, I2C, SPI, and CA
 | [Sensor Drivers](#sensor-drivers) | Ultrasonic, Load Cell, Current Sensor |
 | [PWM & ADC](#pwm--adc) | Edge/Center aligned PWM, ADC with DMA |
 | [Build System](#build-system) | Custom Makefile + Linker Script + Startup |
+
+---
+
+## RTOS UAV Sensor Acquisition
+
+**[STM32-UAV-RTOS-SENSOR-ACQUISITION](https://github.com/BKuljanin/STM32-UAV-RTOS-SENSOR-ACQUISITION)**
+FreeRTOS multi-sensor acquisition system for UAV applications on STM32F446RE. Four RTOS tasks handle IMU reading via
+SPI1+DMA (interrupt driven on IMU pin data ready 1 kHz), barometer and magnetometer via interrupt driven I2C1, GPS via UART1+DMA circular buffer, and SD card
+CSV logging via FATFS over SPI2. All peripheral drivers are register level. Includes complementary filter attitude
+estimation, BMP280 temperature/pressure compensation, and NMEA sentence parsing.
 
 ---
 

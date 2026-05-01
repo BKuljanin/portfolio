@@ -17,7 +17,7 @@ This repository contains STM32 firmware projects covering RTOS, UART, I2C, SPI, 
 | [I2C Drivers](#i2c-drivers) | IMU (Polling, Interrupt, HAL) |
 | [UART Drivers](#uart-drivers) | GPS (Polling, DMA) |
 | [CAN Bus](#can-bus) | Two board CAN communication |
-| [Sensor Drivers](#sensor-drivers) | Ultrasonic, Load Cell, Current Sensor |
+| [Sensor Drivers](#sensor-drivers) | Encoder, Ultrasonic, Load Cell, Current Sensor |
 | [PWM & ADC](#pwm--adc) | Edge/Center aligned PWM, ADC with DMA |
 | [Build System and Bootloader](#build-system-and-bootloader) | Custom Makefiles, Linker Scripts, Startup files, Bootloader |
 
@@ -80,6 +80,9 @@ CAN communication between two boards: Nucleo F446RE and STM32 F103C6T6 (bluepill
 ---
 
 ## Sensor Drivers
+
+**[STM32-Encoder-PWM-Driver]((https://github.com/BKuljanin/STM32-Encoder-PWM-Driver))**
+AS5600 absolute magnetic encoder driver in PWM mode. Angle and speed measurement.
 
 **[STM32-HCSR04-Ultrasonic-Driver](https://github.com/BKuljanin/STM32-HCSR04-Ultrasonic-Driver)**
 HC-SR04 ultrasonic sensor driver for distance measurement.

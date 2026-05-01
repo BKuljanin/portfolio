@@ -81,7 +81,7 @@ CAN communication between two boards: Nucleo F446RE and STM32 F103C6T6 (bluepill
 
 ## Sensor Drivers
 
-**[STM32-Encoder-PWM-Driver]((https://github.com/BKuljanin/STM32-Encoder-PWM-Driver))**
+**[STM32-Encoder-PWM-Driver](https://github.com/BKuljanin/STM32-Encoder-PWM-Driver)**
 AS5600 absolute magnetic encoder driver in PWM mode. Angle and speed measurement.
 
 **[STM32-HCSR04-Ultrasonic-Driver](https://github.com/BKuljanin/STM32-HCSR04-Ultrasonic-Driver)**
